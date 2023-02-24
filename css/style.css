@@ -1,0 +1,435 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  /* font-family: 'Coffee Mood', sans-serif; */
+  /* font-family: 'Ningst Mode', sans-serif; */
+  /* font-family: 'Jennie on the Block', sans-serif; */
+  box-sizing: border-box;
+}
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: 10px;
+  scrollbar-color: grey transparent;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 7px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color:grey;
+  border-radius: 7px;
+}
+html {
+  scroll-behavior: smooth;
+  width: 100vw;
+}
+body {
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  min-width: 300px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+/* Nav menu ------------------------------------------------------------------ */
+header{
+  width: 100%;
+  position: absolute;
+  padding: 30px 0px;
+  top: 0;
+  left: 0;
+  font-family: 'Rancho', cursive;
+}
+.nav {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-sub {
+  margin-right: 15px;
+}
+.nav h1{
+  color: #094b65;
+  font-size: 3rem;
+  font-weight: bolder;
+  padding: 10px 15px 10px 50px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  padding: 10px 15px 10px 15px;
+  margin-left: 15px;
+  border-radius: 15px;
+  transition: 0.5s ease-in;
+}
+.nav a:hover {
+  color: white;
+  background-color: #094b65;
+}
+.nav h2 {
+  color: white;
+}
+/* Page Accueil Spots ----------------------------------------------------------------- */
+section.toplink {
+  position: absolute;
+  top: 200px;
+  font-family: 'Rancho', cursive;
+}
+
+section.toplink h2{
+  color: #094b65;
+  font-size: 10vw;
+}
+section.toplink h3{
+  color: #094b65;
+  font-size: 8vw;
+}
+section.imgforparralax {
+  position: absolute;
+  top: 340px;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  width: 120vw;
+}
+section.imgforparralax img {
+  width: 200%;
+  height: 150%;
+  max-height: 475px;
+  object-fit: cover;
+}
+#ancreSpot {
+  position: absolute;
+  top: 85vh;
+  font-size: 2rem;
+  color: whitesmoke;
+  text-decoration: none;
+  padding: 10px 25px 10px 25px;
+  background-color: #094b65;
+  border-radius: 15px;
+  font-family: 'Rancho', cursive;
+  scroll-behavior: smooth;
+}
+section#parralax {
+  width: 100%;
+  height: 80%;
+  background-color: #094b65;
+  margin-top: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.list-lieux {
+  width: 85vw;
+  min-width: 250px;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+/* Lieux ----------------------*/
+.lieux {
+  margin: 10px;
+  background-color: #99acb4;
+  height: 45%;
+  min-height: 275px;
+  width: 45%;
+  min-width: 225px;
+  max-width: 250px;
+  border-radius: 20px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.5s ease;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+.lieux:hover {
+  box-shadow: 4px 7px 12px 0px rgba(60, 60, 60, 0.3);
+}
+.leftarealieux {
+  height: 55%;
+  max-height: 150px;
+  width: 100%;
+  border-radius: 50px 0 0 0;
+}
+.lieux .leftarealieux img {
+  width: 100%;
+  height: 100%;
+  max-height: 150px;
+  min-height: 15dvh;
+  border-radius: 20px 0 0 0;
+  border: solid 4px transparent;
+  object-fit: cover;
+}
+.rightarealieux {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.adresse {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.rightarealieux h2 {
+  color: white;
+}
+.rightarealieux h3 {
+  color: white;
+  font-size: medium;
+}
+.btns {
+  margin-top: 5px;
+}
+
+.btnmaps {
+  border: solid 1px white;
+  padding: 1px 4px 1px 4px;
+  width: 90%;
+  height: fit-content;
+  background-color: #c39066;
+  box-shadow: 0px 5px 10px 0px gray;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.5s ease-in;
+  text-decoration: none;
+}
+.btnmaps:hover {
+  background-color: #c78854;
+}
+/* Footer -------------------------------------------------------------------- */
+footer {
+  height: 30px;
+  background-color: #99acb4;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Page Contact ------------------------------------------------------------------------------------- */
+
+.contact-section {
+  padding: 63px 0;
+  margin: auto;
+  width: 90%;
+}
+.contact-section h1 {
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+p {
+  text-align: center;
+}
+.border {
+  width: 100px;
+  height: 10px;
+  background: #094b65;
+  margin: 40px auto;
+  transition: width 2s ease;
+}
+.borderanim:hover .border {
+  width: 50%;
+  border-radius: 30px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.contact-form-text {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: #99acb4;
+  padding: 20px 40px;
+  outline: none;
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+  border-radius: 30px;
+}
+.contact-form-text::placeholder {
+  color: white;
+}
+.contact-form-text:focus {
+  box-shadow: 0 0 10px 4px #5199b6;
+}
+textarea {
+  height: 250px;
+}
+textarea.contact-form-text {
+  resize: none;
+  height: 120px;
+}
+.contact-form-btn {
+  margin: 20px;
+  float: right;
+  border: 0;
+  background: #094b65;
+  color: #fff;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.contact-form-btn:hover {
+  background: #99acb4;
+  box-shadow: 0 0 10px 2px #145c79;
+}
+/* Page Login ------------------------------------------------------------------------------------ */
+
+.loginform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: 80%;
+  height: 50vh;
+  justify-content: space-evenly;
+}
+.loginform * {
+  border: none;
+}
+.loginform .email {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.loginform .password {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.loginform input {
+  height: 4vh;
+  width: 60vw;
+  max-width: 300px;
+  min-width: 200px;
+  background-color: #99acb4;
+  color: white;
+  padding-left: 15px;
+  z-index: 2;
+  border-radius: 20px 0 20px 0;
+  transition: 0.5s ease;
+}
+.loginform input:focus {
+  outline: none;
+}
+.loginform input::placeholder {
+  padding-left: 5px;
+  text-align: start;
+  color: white;
+}
+.loginform button {
+  border-radius: 20px;
+  background-color: #99acb4;
+  color: white;
+  height: 4vh;
+  width: 30vw;
+  max-width: 250px;
+  min-width: 150px;
+  transition: 0.5s ease;
+  margin-top: 30px;
+}
+.loginform button:hover {
+  background-color: #094b65;
+}
+.deboutimg {
+  height: 30vh;
+  width: 10vh;
+  z-index: 3;
+}
+.loginfigureimg {
+  height: 25vh;
+  width: 20vh;
+  z-index: 3;
+}
+/* Page Panel Admin -------------------------------------------------------------------------------------*/
+.resultmodify {
+  margin-top: 30px;
+  background-color: #3cb371;
+  height: 60%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* No Select text or image  */
+
+.selectDisable {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+@media (min-width: 545px) {
+  body {
+    min-height: 100vh;
+  }
+}
+
+@media (max-width: 545px) {
+  body {
+    min-height: 100vh;
+  }
+  .nav {
+    flex-direction: column;
+    min-width: 375px;
+  }
+  #ancreSpot {
+    top: 65vh;
+  }
+  .nav-sub {
+    margin: 0;
+    margin-top: 15px;
+  }
+  section.toplink h2{
+    color: #094b65;
+    font-size: 18vw;
+  }
+  section.toplink h3{
+    color: #094b65;
+    font-size: 13vw;
+  }
+}
