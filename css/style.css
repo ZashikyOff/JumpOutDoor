@@ -43,7 +43,7 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 100%;
+  width: 99%;
   min-width: 300px;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -94,7 +94,7 @@ header{
 /* Page Accueil Spots ----------------------------------------------------------------- */
 section.toplink {
   position: absolute;
-  top: 200px;
+  top: 350px;
   font-family: 'Rancho', cursive;
 }
 
@@ -106,22 +106,7 @@ section.toplink h3{
   color: #094b65;
   font-size: 8vw;
 }
-section.imgforparralax {
-  position: absolute;
-  top: 340px;
-  left: 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow-x: hidden;
-  width: 120vw;
-}
-section.imgforparralax img {
-  width: 200%;
-  height: 150%;
-  max-height: 475px;
-  object-fit: cover;
-}
+
 #ancreSpot {
   position: absolute;
   top: 85vh;

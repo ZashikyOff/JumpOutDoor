@@ -28,9 +28,6 @@ require_once "core/header.php";
     <h3>I'ts time for</h3>
     <h2>Parkour</h2>
   </section>
-  <section class="imgforparralax">
-    <img src="img/immeubletop.png" alt="">
-  </section>
   <a id="ancreSpot" href="#list-lieux">Spots</a>
   <section id="parralax">
     <div class="list-lieux" id="list-lieux"><?php
