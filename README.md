@@ -1,6 +1,4 @@
-# JumpOutDoor
-
-# **Projet de site web pour une prothésiste ongulaire**
+# **Jump Out Door**
 
 
 Ce projet est réalisé dans le cadre de la certification de développeur web et web mobile. Il s'agit d'un site web destiné au personnes fan du parkour qui souhaite trouver des spots (endroits) ou s'entrainer
