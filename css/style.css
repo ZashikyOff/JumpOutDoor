@@ -206,7 +206,8 @@ section#parralax {
   width: 60%;
   height: fit-content;
   background-color: #99acb4;
-  box-shadow: -1px -4px 8px #b5e9f0, 6px 6px 12px #327da9;
+  box-shadow:  5px 5px 17px #6b787e,-5px -5px 17px #c7e0ea;
+
   color: white;
   border-radius: 25px;
   cursor: pointer;
