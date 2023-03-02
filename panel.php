@@ -3,6 +3,9 @@ session_name("parkour");
 session_start();
 $title = " - Contact Us";
 require_once "core/header.php";
+if(!isset($_SESSION["email"])){
+  header('Location: index.php');
+}
 ?>
 
 <body style="overflow: auto;">
@@ -12,7 +15,7 @@ require_once "core/header.php";
       <div class="nav-sub">
         <a href="debuter.php">Figure</a>
         <a href="contact.php">Contacts</a>
-        <a href="login.php">Panel Admin</a>
+        <a href="core/logout.php">Deconnexion</a>
       </div>
     </div>
   </header>

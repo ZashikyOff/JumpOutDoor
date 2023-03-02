@@ -57,10 +57,20 @@ require_once "core/header.php";
   </header>
   <form action="" method="post" class="loginform">
     <div class="email">
-      <input type="email" placeholder="Entrez votre email" class="pseudologin selectDisable" name="email" required autocomplete="off">
+      <div class="form-control">
+        <input type="email" required name="email">
+        <label>
+          <span style="transition-delay:0ms">U</span><span style="transition-delay:50ms">s</span><span style="transition-delay:100ms">e</span><span style="transition-delay:150ms">r</span><span style="transition-delay:200ms">n</span><span style="transition-delay:250ms">a</span><span style="transition-delay:300ms">m</span><span style="transition-delay:350ms">e</span>
+        </label>
+      </div>
     </div>
     <div class="password">
-      <input type="password" placeholder="Entrez votre mot de passe" class="passwordlogin" name="password" required autocomplete="off">
+    <div class="form-control">
+    <input type="password" required name="password">
+    <label>
+        <span style="transition-delay:0ms">P</span><span style="transition-delay:50ms">a</span><span style="transition-delay:100ms">s</span><span style="transition-delay:150ms">s</span><span style="transition-delay:200ms">w</span><span style="transition-delay:250ms">o</span><span style="transition-delay:300ms">r</span><span style="transition-delay:350ms">d</span>
+    </label>
+</div>
     </div>
     <button>Se Connecter</button>
   </form>

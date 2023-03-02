@@ -33,8 +33,13 @@ require_once "core/header.php";
     <div class="list-lieux" id="list-lieux"><?php
                                             while ($row = $result->fetch(PDO::FETCH_ASSOC)) :
                                               $i++;
+                                              if ($i % 2) {
+                                                $color = "color1";
+                                              } else {
+                                                $color = "color2";
+                                              }
                                             ?>
-        <div class="lieux nb-<?= $i ?>">
+        <div class="lieux nb-<?= $i ?> <?= $color ?>">
           <div class="leftarealieux">
             <img src="<?= htmlspecialchars($row['img_lieu']); ?>">
           </div>
