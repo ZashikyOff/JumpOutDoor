@@ -24,6 +24,7 @@ require_once "core/header.php";
       </div>
     </div>
   </header>
+  <img src="img/bgtest.jpg" alt="" class="imgbgtest">
   <section class="toplink">
     <h3>I'ts time for</h3>
     <h2>Parkour</h2>
