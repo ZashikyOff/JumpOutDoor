@@ -38,7 +38,7 @@ html {
   width: 100%;
 }
 body {
-  background-color: #ffffff;
+  background-color: #99acb4;
   padding: 0;
   margin: 0;
   display: flex;
@@ -58,6 +58,7 @@ header {
   padding: 30px 0px;
   left: 0;
   font-family: "Rancho", cursive;
+  background-color: #6a6a6a6c;
 }
 .nav {
   width: 100%;
@@ -99,10 +100,10 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 101vh;
   object-fit: cover;
   z-index: -1;
-  filter: blur(10px);
+  filter: blur(5px);
 }
 section.toplink {
   position: absolute;
@@ -134,16 +135,17 @@ section.toplink h3 {
 section#parralax {
   width: 100%;
   height: 90%;
-  background-color: #094b65;
+  background-color: #094b65bd;
   margin-top: 100vh;
   display: flex;
   justify-content: center;
+  box-shadow: inset 20px 20px 60px #084056, inset -20px -20px 60px #0a5674;
 }
-section#parralax i{
+section#parralax a .toptitle {
   position: fixed;
-  top: 90%;
-  left: 3vw;
-  font-size: 10vw;
+  bottom: 5%;
+  left: 1.5vw;
+  font-size: 2rem;
   color: white;
   display: none;
 }
@@ -164,7 +166,7 @@ section#parralax i{
 /* Lieux ----------------------*/
 .color1 {
   background-color: #9196b5;
-  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 11px 11px 36px #084056, -11px -11px 36px #0a5674;
 }
 .color1 .btnmaps {
   background-color: #9196b5;
@@ -173,7 +175,7 @@ section#parralax i{
 
 .color2 {
   background-color: #99acb4;
-  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 11px 11px 36px #084056, -11px -11px 36px #0a5674;
 }
 .color2 .btnmaps {
   background-color: #99acb4;
@@ -181,7 +183,7 @@ section#parralax i{
 }
 
 .lieux {
-  margin: 10px;
+  margin: 25px;
   height: 45%;
   min-height: 275px;
   width: 45%;
@@ -248,7 +250,7 @@ section#parralax i{
 /* Footer -------------------------------------------------------------------- */
 footer {
   height: 30px;
-  background-color: #99acb4;
+  background-color: #9196b5;
   text-align: center;
   width: 100%;
   display: flex;
@@ -383,8 +385,8 @@ textarea.contact-form-text {
   transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.form-control input:focus+label span,
-.form-control input:valid+label span {
+.form-control input:focus + label span,
+.form-control input:valid + label span {
   color: #094b65;
   transform: translateY(-30px);
 }
@@ -410,7 +412,6 @@ textarea.contact-form-text {
   flex-direction: column;
   align-items: center;
   margin: 30vh auto 0 auto;
-  
 }
 
 /* Page Panel Admin -------------------------------------------------------------------------------------*/

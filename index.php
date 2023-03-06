@@ -31,7 +31,7 @@ require_once "core/header.php";
   </section>
   <a id="ancreSpot" href="#list-lieux">Spots</a>
   <section id="parralax">
-    <a href="#title"><i class="fa-regular fa-circle-up"></i></a>
+    <a href="#title"><i class="fa-regular fa-circle-up toptitle"></i></a>
     <div class="list-lieux" id="list-lieux"><?php
                                             while ($row = $result->fetch(PDO::FETCH_ASSOC)) :
                                               $i++;
