@@ -24,16 +24,16 @@ $result = $lienDB->query($sql2);
     <?php
     while ($row = $result->fetch(PDO::FETCH_ASSOC)) :
     ?>
-      <div>
-        <h2><?= htmlspecialchars($row['label']); ?></h2>
+      <div class="figurecard">
+        <h2 class="figuretitle"><?= htmlspecialchars($row['label']); ?></h2>
         <div class="img">
           <?php
           if(strlen(htmlspecialchars($row['video'])) >= 1){
-            ?><iframe width="560" height="315" src="<?= htmlspecialchars($row['video']); ?>" title="<?= htmlspecialchars($row['label']); ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><?php
+            ?><iframe width="90%" height="50%" src="<?= htmlspecialchars($row['video']); ?>" title="<?= htmlspecialchars($row['label']); ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><?php
           }
           ?>
         </div>
-        <div class="explication">
+        <div class="figure-explication">
           <h3><?= htmlspecialchars($row['explication']); ?></h3>
         </div>
       </div>
