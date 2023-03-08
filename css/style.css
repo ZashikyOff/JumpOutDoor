@@ -38,7 +38,7 @@ html {
   width: 100%;
 }
 body {
-  background-color: #99acb4;
+  background-color: #ffffff;
   padding: 0;
   margin: 0;
   display: flex;
@@ -58,7 +58,6 @@ header {
   padding: 30px 0px;
   left: 0;
   font-family: "Rancho", cursive;
-  background-color: #6a6a6a6c;
 }
 .nav {
   width: 100%;
@@ -72,7 +71,7 @@ header {
 }
 .nav h1 {
   color: #094b65;
-  font-size: 3rem;
+  font-size: 3.5vw;
   font-weight: bolder;
   padding: 10px 15px 10px 50px;
 }
@@ -339,8 +338,9 @@ textarea.contact-form-text {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: auto;
+  margin: 25vh auto;
   width: 25%;
+  min-width: 300px;
   height: 60vh;
   justify-content: space-evenly;
   background: #094b654e;
@@ -433,9 +433,17 @@ textarea.contact-form-text {
   -o-user-select: none;
   user-select: none;
 }
+@media (min-width: 1600px) {
+  .nav h1 {
+    font-size: 3vw;
+  }
+}
 @media (min-width: 545px) {
   body {
     min-height: 100vh;
+  }
+  header{
+    background-color: #6b787e7b;
   }
 }
 
@@ -446,6 +454,9 @@ textarea.contact-form-text {
   .nav {
     flex-direction: column;
     min-width: 375px;
+  }
+  .nav h1 {
+    font-size: 12vw;
   }
   #ancreSpot {
     top: 65vh;
@@ -461,5 +472,9 @@ textarea.contact-form-text {
   section.toplink h3 {
     color: #094b65;
     font-size: 13vw;
+  }
+  .loginform {
+    height: 350px;
+    margin: auto 100%;
   }
 }
