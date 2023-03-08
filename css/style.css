@@ -249,19 +249,21 @@ section#parralax a .toptitle {
 /* Footer -------------------------------------------------------------------- */
 footer {
   height: 30px;
-  background-color: #9196b5;
+  background-color: #094b65;
+  color: rgb(255, 252, 235);
   text-align: center;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "Tilt Neon", cursive;
 }
 
 /* Page Contact ------------------------------------------------------------------------------------- */
 
 .contact-section {
-  padding: 63px 0;
-  margin: 130px auto 0;
+  margin: auto;
+  margin-top: 22vh;
   width: 90%;
   font-family: "Tilt Neon", cursive;
 }
@@ -293,22 +295,25 @@ p {
 
 .contact-form-text {
   display: block;
-  width: 100%;
+  width: 90%;
   box-sizing: border-box;
-  margin: 16px 0;
+  margin: 16px auto;
   border: 0;
-  background: #99acb4;
-  padding: 20px 40px;
+  background: #ffffff;
+  padding: 15px 25px;
   outline: none;
-  color: rgb(255, 255, 255);
+  color: #084056;
   transition: 0.5s;
   border-radius: 30px;
+  box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #ffffff;
+  font-family: "Tilt Neon", cursive;
 }
 .contact-form-text::placeholder {
-  color: white;
+  color: #084056;
+  font-family: "Tilt Neon", cursive;
 }
 .contact-form-text:focus {
-  box-shadow: 0 0 10px 4px #5199b6;
+  box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #ffffff;
 }
 textarea {
   height: 250px;
@@ -427,7 +432,7 @@ textarea.contact-form-text {
   font-size: 85%;
   padding: 5px;
 }
-.figuretitle{
+.figuretitle {
   margin: 10px auto;
   width: 100%;
 }
