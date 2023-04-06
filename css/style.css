@@ -247,12 +247,13 @@ section#parralax a .toptitle {
   text-decoration: none;
 }
 /* Footer -------------------------------------------------------------------- */
-footer {
+:root footer {
   height: 30px;
   background-color: #094b65;
   color: rgb(255, 252, 235);
   text-align: center;
   width: 100%;
+  position: static;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -260,6 +261,22 @@ footer {
 }
 
 /* Page Contact ------------------------------------------------------------------------------------- */
+
+.backgroundcontact{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  object-fit: cover;
+  filter: blur(5px);
+}
+
+body.contact *{
+  z-index: 1;
+}
 
 .contact-section {
   margin: auto;
@@ -269,7 +286,7 @@ footer {
 }
 .contact-section h1 {
   text-align: center;
-  color: rgb(0, 0, 0);
+  color: #000000;
 }
 p {
   text-align: center;
@@ -292,20 +309,22 @@ p {
   padding: 0 10px;
   overflow: hidden;
 }
-
+.contact-section p {
+  color: #000000;
+}
 .contact-form-text {
   display: block;
   width: 90%;
   box-sizing: border-box;
   margin: 16px auto;
   border: 0;
-  background: #ffffff;
+  background: #ffffffbe;
   padding: 15px 25px;
   outline: none;
   color: #084056;
   transition: 0.5s;
   border-radius: 30px;
-  box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #ffffff;
+  box-shadow: 5px 5px 10px #dbdbdbaf, -5px -5px 10 #ffffffd3;
   font-family: "Tilt Neon", cursive;
 }
 .contact-form-text::placeholder {
@@ -313,7 +332,7 @@ p {
   font-family: "Tilt Neon", cursive;
 }
 .contact-form-text:focus {
-  box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #ffffff;
+  box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #ffffffd8;
 }
 textarea {
   height: 250px;
@@ -343,13 +362,13 @@ textarea.contact-form-text {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 25vh auto;
+  margin: auto;
   width: 25%;
   min-width: 300px;
   height: 60vh;
   justify-content: space-evenly;
-  background: #094b654e;
-  box-shadow: 16px 16px 43px #08415738, -16px -16px 43px #0a557343;
+  background: #094b65b4;
+  box-shadow: 16px 16px 43px #08415760, -16px -16px 43px #0a557353;
   border-radius: 15px;
   padding: 50px 0;
 }
@@ -366,13 +385,13 @@ textarea.contact-form-text {
   width: 100%;
   padding: 10px 0;
   font-size: 18px;
-  color: #094b65;
+  color: #ffffff;
 }
 
 .form-control input:focus,
 .form-control input:valid {
   outline: 0;
-  border-bottom-color: #094b65;
+  border-bottom-color: #ffffff;
 }
 
 .form-control label {
@@ -392,7 +411,7 @@ textarea.contact-form-text {
 
 .form-control input:focus + label span,
 .form-control input:valid + label span {
-  color: #094b65;
+  color: #ffffff;
   transform: translateY(-30px);
 }
 .loginform button {
@@ -409,21 +428,35 @@ textarea.contact-form-text {
   cursor: pointer;
 }
 .loginform button:hover {
-  background-color: #094b65;
+  background-color: #ffffff;
+  color: #084056;
 }
 /* Page des Figures */
+
+.bgdebuter {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  object-fit: cover;
+  filter: blur(3px);
+}
 .list-figure {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 30vh auto 0 auto;
+  margin: 25vh auto 20px auto;
+  gap: 20px;
 }
 .figurecard {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(145deg, #ffffff, #e6e6e6);
-  box-shadow: 13px 13px 21px #bdbdbd, -13px -13px 21px #ffffff;
+  background: linear-gradient(145deg, #ffffffd4, #e6e6e6d4);
+  box-shadow: 13px 13px 21px #bdbdbdc1, -13px -13px 21px #ffffffc9;
   border-radius: 15px;
   width: 85%;
   max-width: 450px;
@@ -441,6 +474,27 @@ textarea.contact-form-text {
 }
 
 /* Page Panel Admin -------------------------------------------------------------------------------------*/
+
+img.bgadminpanel {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  min-height: 200vh;
+  z-index: -1;
+}
+
+main.admin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 200px;
+  margin-bottom: 30px;
+}
+
 .resultmodify {
   margin-top: 30px;
   background-color: #3cb371;
@@ -448,6 +502,61 @@ textarea.contact-form-text {
   width: 60%;
   display: flex;
   flex-direction: column;
+}
+.allspots {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 90%;
+  gap: 55px;
+}
+.allspots .article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 350px;
+  width: 30%;
+  background-color: #0c5b7ace;
+  color: #ffffff;
+  border-radius: 10px 10px 0 0;
+}
+
+.allspots .article img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+.allspots .article form {
+  margin-top: 5px;
+}
+.allspots .article input {
+  height: 25px;
+  width: 80%;
+  font-size: 1.5rem;
+  outline: none;
+  padding: 5px;
+  padding-left: 10px;
+  box-sizing: content-box;
+  border-radius: 10px;
+  border: none;
+}
+.allspots .article .grub {
+  margin-top: 10px;
+}
+
+.allspots .article .grub button {
+  background-color: transparent;
+  border: none;
+}
+
+.allspots .article .grub a:visited,.allspots .article .grub a,.allspots .article .grub button{
+color: white;
+height: 32px;
+width: 32px;
+font-size: 1.1rem;
+margin: 5px;
 }
 
 /* No Select text or image  */

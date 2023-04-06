@@ -10,6 +10,7 @@ $result = $lienDB->query($sql2);
 ?>
 
 <body style="overflow: auto;">
+<img src="img/bgtest.jpg" alt="" class="bgdebuter">
   <header>
     <div class="nav">
       <h1 id="title">Jump Outdoor</h1>
@@ -39,7 +40,7 @@ $result = $lienDB->query($sql2);
       </div>
     <?php endwhile; ?>
   </div>
-  <footer style="bottom: 0;position:absolute;">
+  <footer>
     <p id="credit">&copy; - 2023 - Team Xenatil - Tous droits réservés</p>
   </footer>
 </body>

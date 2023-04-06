@@ -1,14 +1,61 @@
 <?php
 session_name("parkour");
 session_start();
-$title = " - Contact Us";
+$title = " - Panel Admin";
 require_once "core/header.php";
-if(!isset($_SESSION["email"])){
+require "core/config.php";
+if (!isset($_SESSION["email"])) {
   header('Location: index.php');
 }
+
+$sql = "SELECT * FROM lieux";
+
+// Préparer la requête
+$query = $lienDB->prepare($sql);
+
+// Exécution de la requête
+if ($query->execute()) {
+  // traitement des résultats
+  $results = $query->fetchAll();
+}
+
+if (isset($_GET["delete"])) {
+  $sql = "DELETE FROM lieux WHERE id = :id";
+
+
+  // Préparer la requête
+  $query = $lienDB->prepare($sql);
+
+  $query->bindParam(':id', $_GET["delete"], PDO::PARAM_INT);
+
+  // Exécution de la requête
+  if ($query->execute()) {
+    // traitement des résultats
+    header('Location: panel.php');
+  }
+}
+
+if (isset($_POST["label"]) && !empty($_POST["label"])) {
+  $sql = "UPDATE lieux SET label = :label WHERE id = :id";
+
+
+  // Préparer la requête
+  $query = $lienDB->prepare($sql);
+
+  $query->bindParam(':id', $_POST["id"], PDO::PARAM_INT);
+  $query->bindParam(':label', $_POST["label"], PDO::PARAM_STR);
+
+  // Exécution de la requête
+  if ($query->execute()) {
+    // traitement des résultats
+    header('Location: panel.php');
+  }
+}
+
 ?>
 
 <body style="overflow: auto;">
+<img src="img/1038310.jpg" alt="" class="bgadminpanel">
   <header>
     <div class="nav">
       <h1 id="title">Jump Outdoor</h1>
@@ -19,12 +66,37 @@ if(!isset($_SESSION["email"])){
       </div>
     </div>
   </header>
-  <main style="margin-top: 200px;">
+  <main class="admin">
     <h3>Vous etes bien connecté avec l'email : <?= $_SESSION["email"] ?></h3>
     <div class="resultmodify">
     </div>
+    <div class="allspots">
+      <?php $x = 0;
+      while ($x <= (count($results)) - 1) {
+      ?><div class="article"><?php
+                              if (isset($results[$x]["img_lieu"])) {
+                              ?><img src="<?= $results[$x]["img_lieu"] ?>" alt=""><?php
+                                                                                }
+                                                                                  ?>
+          <form action="" method="post">
+            <input type="hidden" name="id" value="<?= $results[$x]["id"] ?>">
+            <input type="text" name="label" id="" placeholder="<?= $results[$x]["label"] ?>">
+          
+          <div class="grub">
+            <a href="?delete=<?= $results[$x]["id"] ?>"><i class="fa-solid fa-trash fa-2xl"></i></a>
+            <button type="submit"><i class="fa-solid fa-arrows-rotate fa-2xl"></i></button>
+          </div>
+          </form>
+          <?php
+
+          $x++;
+          ?>
+        </div><?php
+            }
+              ?>
+    </div>
   </main>
-  <footer style="position: absolute;bottom:0;width:100vw">
+  <footer>
     <p id="credit">&copy; - 2023 - Team Xenatil - Tous droits réservés</p>
   </footer>
 </body>

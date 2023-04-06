@@ -45,6 +45,7 @@ require_once "core/header.php";
 ?>
 
 <body style="overflow: auto;">
+<img src="img/bgtest.jpg" alt="" class="backgroundcontact">
   <header>
     <div class="nav">
       <h1 id="title">Panel Login</h1>

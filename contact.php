@@ -6,7 +6,8 @@ $title = " - Contact Us";
 require_once "core/header.php";
 ?>
 
-<body style="overflow: auto;">
+<body style="overflow: auto;" class="contact">
+<img src="img/bgtest.jpg" alt="" class="backgroundcontact">
   <header>
     <div class="nav">
       <h1 id="title">Jump Outdoor</h1>
