@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,700&display=swap');
 
 * {
   margin: 0;
@@ -450,29 +451,38 @@ textarea.contact-form-text {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 20vh 0 0 0;
+  margin: 20vh 0 10vh 0;
   gap: 20px;
+  width: 90%;
+  height: fit-content;
 }
 .figurecard {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(145deg, #ffffffd4, #e6e6e6d4);
-  box-shadow: 13px 13px 21px #bdbdbdc1, -13px -13px 21px #ffffffc9;
+  background-color: #6b787e9b;
+  box-shadow: 13px 13px 21px #8f8f8fc1, -13px -13px 21px #c0c0c0c9;
   border-radius: 15px;
-  width: 85%;
-  max-width: 450px;
-  min-height: 150px;
+  width: 50%;
+  height: 85%;
+  min-width: 250px;
+  min-height: 400px;
+  max-width: 350px;
+  max-height: 500px;
   margin: 10px;
+  font-family: 'Raleway', sans-serif;
   font-size: 85%;
   padding: 5px;
 }
 .figuretitle {
   margin: 10px auto;
   width: 100%;
+  font-family: 'Raleway', sans-serif;
 }
 .figure-explication {
   margin-top: 15px;
+  width: 90%;
+  text-align: start;
 }
 
 /* Page Panel Admin -------------------------------------------------------------------------------------*/
