@@ -30,7 +30,7 @@ $result = $lienDB->query($sql2);
         <div class="img">
           <?php
           if (strlen(htmlspecialchars($row['video'])) >= 1) {
-          ?><iframe width="90%" height="50%" src="<?= htmlspecialchars($row['video']); ?>" title="<?= htmlspecialchars($row['label']); ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><?php
+          ?><iframe src="https://www.youtube.com/embed/<?= htmlspecialchars($row['video']); ?>" title="<?= htmlspecialchars($row['label']); ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><?php
                                                                                                                                                                                                                                                                                                 }
                                                                                                                                                                                                                                                                                                   ?>
         </div>
