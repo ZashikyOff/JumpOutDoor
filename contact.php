@@ -43,10 +43,10 @@ if(isset($_POST["auteur"]) && isset($_POST["message"])){
 
 ?>
   <div class="contact-section">
-    <h1>Contactez Nous</h1>
+    <h2>Contactez Nous</h2>
     <div class="borderanim">
       <div class="border"></div>
-      <p>Bonjour / Bonsoir<br>Cette page sert a envoyer les coordonnées d'un spot pour qu'il puisse être ajouter au site </p>
+      <h3>Bonjour / Bonsoir<br>Cette page sert a envoyer les coordonnées d'un spot pour qu'il puisse être ajouter au site </h3>
       <div class="border"></div>
     </div>
     <form class="contact-form" action="" method="post">
@@ -57,6 +57,5 @@ if(isset($_POST["auteur"]) && isset($_POST["message"])){
   </div>
 </body>
 <?php
-$title = " - Accueil";
 require_once "core/footer.php";
 ?>

@@ -80,7 +80,7 @@ header {
 .nav a {
   text-decoration: none;
   color: black;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   padding: 10px 15px 10px 15px;
   margin-left: 15px;
   border-radius: 15px;
@@ -123,6 +123,7 @@ section.toplink h3 {
   z-index: 2;
   color: #094b65;
   font-size: 8vw;
+  letter-spacing: 0.3rem;
   text-shadow: 0 0 2px #ffffff, 0 0 2px #ffffff, 0 0 2px #ffffff, 0 0 2px #ffffff, 0 0 2px #ffffff, 0 0 2px #ffffff, 0 0 2px #ffffff, 0 0 2px #ffffff, 0 0 2px #ffffff, 0 0 2px #ffffff, 0 0 2px #ffffff, 0 0 2px #ffffff, 0 0 2px #ffffff, 0 0 2px #ffffff, 0 0 2px #ffffff, 0 0 2px #ffffff, 0 0 2px #ffffff, 0 0 2px #ffffff, 0 0 2px #ffffff, 0 0 2px #ffffff;
 }
 
@@ -290,14 +291,20 @@ body.contact * {
   margin: auto;
   margin-top: 22vh;
   width: 90%;
-  font-family: "Tilt Neon", cursive;
+  font-family: "Rancho", cursive;
 }
-.contact-section h1 {
+.contact-section h2 {
   text-align: center;
+  font-family: "Rancho", cursive;
+  font-size: 3rem;
   color: #000000;
 }
-p {
+.contact-section h3 {
   text-align: center;
+  font-style: italic;
+  font-family: "Rancho", cursive;
+  font-size: 2rem;
+  text-shadow: 0 0 2px #ffffff, 0 0 2px #ffffff, 0 0 2px #ffffff, 0 0 2px #ffffff, 0 0 2px #ffffff, 0 0 2px #ffffff, 0 0 2px #ffffff, 0 0 2px #ffffff, 0 0 2px #ffffff, 0 0 2px #ffffff, 0 0 2px #ffffff, 0 0 2px #ffffff, 0 0 2px #ffffff, 0 0 2px #ffffff, 0 0 2px #ffffff, 0 0 2px #ffffff, 0 0 2px #ffffff, 0 0 2px #ffffff, 0 0 2px #ffffff, 0 0 2px #ffffff;
 }
 .border {
   width: 100px;
@@ -330,7 +337,6 @@ p {
   padding: 15px 25px;
   outline: none;
   color: #084056;
-  transition: 0.5s;
   border-radius: 30px;
   box-shadow: 5px 5px 10px #dbdbdbaf, -5px -5px 10 #ffffffd3;
   font-family: "Tilt Neon", cursive;
@@ -340,7 +346,7 @@ p {
   font-family: "Tilt Neon", cursive;
 }
 .contact-form-text:focus {
-  box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #ffffffd8;
+  outline: #abc3cd 4px solid;
 }
 textarea {
   height: 250px;
@@ -355,10 +361,12 @@ textarea.contact-form-text {
   border: 0;
   background: #094b65;
   color: #fff;
-  padding: 12px 50px;
+  padding: 12px 35px;
   border-radius: 20px;
   cursor: pointer;
   transition: 0.5s;
+  font-family: "Rancho", cursive;
+  font-size: 1.2rem;
 }
 .contact-form-btn:hover {
   background: #99acb4;
