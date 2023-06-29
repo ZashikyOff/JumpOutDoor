@@ -438,7 +438,7 @@ textarea.contact-form-text {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   z-index: -1;
   object-fit: cover;
@@ -455,8 +455,7 @@ textarea.contact-form-text {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(145deg, #ffffffd4, #e6e6e6d4);
-  box-shadow: 13px 13px 21px #bdbdbdc1, -13px -13px 21px #ffffffc9;
+  background-color: #525d62b4;
   border-radius: 15px;
   width: 85%;
   max-width: 450px;
@@ -468,9 +467,15 @@ textarea.contact-form-text {
 .figuretitle {
   margin: 10px auto;
   width: 100%;
+  color: #ffe2f6cf;
+}
+.figurecard .img {
+  width: fit-content;
+  height: fit-content;
 }
 .figure-explication {
   margin-top: 15px;
+  color: #ffe2f6cf;
 }
 
 /* Page Panel Admin -------------------------------------------------------------------------------------*/
@@ -585,6 +590,7 @@ margin: 5px;
 @media (max-width: 545px) {
   body {
     min-height: 100vh;
+    width: 100vw;
   }
   .nav {
     flex-direction: column;

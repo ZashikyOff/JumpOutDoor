@@ -1,6 +1,6 @@
 <?php 
 // Connexion à la base de données
-$dsn = "mysql:host=localhost;port=3306;dbname=jump_out_door;charset=utf8";
+$dsn = "mysql:host=localhost;port=3306;dbname=u787276512_jump_out_door;charset=utf8";
 $dbUser = "root";
-$dbPassword = "";
+$dbPassword = "root";
 $lienDB = new PDO($dsn, $dbUser, $dbPassword);
