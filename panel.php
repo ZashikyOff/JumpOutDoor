@@ -55,7 +55,7 @@ if (isset($_POST["label"]) && !empty($_POST["label"])) {
 ?>
 
 <body style="overflow: auto;">
-<img src="img/1038310.jpg" alt="" class="bgadminpanel">
+<!-- <img src="img/bgadmin.jpg" alt="" class="bgadminpanel"> -->
   <header>
     <div class="nav">
       <h1 id="title">Jump Outdoor</h1>
