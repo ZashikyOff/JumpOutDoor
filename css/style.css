@@ -480,17 +480,6 @@ textarea.contact-form-text {
 
 /* Page Panel Admin -------------------------------------------------------------------------------------*/
 
-img.bgadminpanel {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  object-fit: cover;
-  width: 100%;
-  min-height: 200vh;
-  z-index: -1;
-}
-
 main.admin {
   display: flex;
   flex-direction: column;
@@ -521,7 +510,8 @@ main.admin {
   flex-direction: column;
   align-items: center;
   height: 350px;
-  width: 30%;
+  width: 25%;
+  min-width: 200px;
   background-color: #0c5b7ace;
   color: #ffffff;
   border-radius: 10px 10px 0 0;

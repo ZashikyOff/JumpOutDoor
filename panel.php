@@ -1,9 +1,14 @@
 <?php
+
 session_name("parkour");
 session_start();
+
 $title = " - Panel Admin";
+
 require_once "core/header.php";
+
 require "core/config.php";
+
 if (!isset($_SESSION["email"])) {
   header('Location: index.php');
 }
@@ -55,13 +60,10 @@ if (isset($_POST["label"]) && !empty($_POST["label"])) {
 ?>
 
 <body style="overflow: auto;">
-<!-- <img src="img/bgadmin.jpg" alt="" class="bgadminpanel"> -->
   <header>
     <div class="nav">
       <h1 id="title">Jump Outdoor</h1>
       <div class="nav-sub">
-        <a href="debuter.php">Figure</a>
-        <a href="contact.php">Contacts</a>
         <a href="core/logout.php">Deconnexion</a>
       </div>
     </div>
