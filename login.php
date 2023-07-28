@@ -1,6 +1,8 @@
 <?php
+
 session_name("parkour");
 session_start();
+
 if (isset($_POST["email"]) && isset($_POST["password"])) {
   // requête SQL
   $sql = "SELECT * FROM admin WHERE email=:email";
